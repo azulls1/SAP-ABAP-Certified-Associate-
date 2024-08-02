@@ -17,11 +17,11 @@ CLASS zashm_04_05 IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-  CONSTANTS c_carrier_id TYPE /dmo/carrier_id       VALUE 'LH'.
-    CONSTANTS c_connection_id TYPE /dmo/connection_id VALUE '0400'.
+    CONSTANTS c_carrier_id TYPE /dmo/carrier_id       VALUE 'LH'.       "c_carrier_id = LH
+    CONSTANTS c_connection_id TYPE /dmo/connection_id VALUE '0400'.     "c_connection_id = 0400
 
-    DATA connection  TYPE REF TO lcl_connection.
-    DATA connections  TYPE TABLE OF REF TO lcl_connection.
+    DATA connection  TYPE REF TO lcl_connection.            "se crea una estructura
+    DATA connections  TYPE TABLE OF REF TO lcl_connection.  "se crea una tabla
 
 * Create Instance
 **********************************************************************
@@ -30,14 +30,14 @@ CLASS zashm_04_05 IMPLEMENTATION.
 
 * Call Method and Handle Exception
 **********************************************************************
-    out->write(  |i_carrier_id    = '{ c_carrier_id }' | ).
-    out->write(  |i_connection_id = '{ c_connection_id }'| ).
+    out->write(  |i_carrier_id    = '{ c_carrier_id }' | ).     "imprime la constante 1
+    out->write(  |i_connection_id = '{ c_connection_id }'| ).   "imprime la constante 2
 
-    TRY.
-       connection = NEW #(
-                           i_carrier_id    = 'LH'
-                           i_connection_id = '0400'
-                         ).
+    TRY.                                                        "intenta
+       connection = NEW #(                                      "creamos la insntancia y guardamos el resultado en connecton
+                           i_carrier_id    = 'LH'               "guardamos la variable 1 y la exportamos
+                           i_connection_id = '0400'             "guardamos la variable 2 y la exportamos
+                         ).                                     "fin
 
 *        connection->set_attributes(
 *          EXPORTING
@@ -45,7 +45,7 @@ CLASS zashm_04_05 IMPLEMENTATION.
 *            i_connection_id = '0400'
 *        ).
 
-           APPEND connection TO connections.
+           APPEND connection TO connections.                    "guardamos lo que nos regresa  e
 
          CATCH cx_abap_invalid_value.
            out->write( `Method call failed` ).
