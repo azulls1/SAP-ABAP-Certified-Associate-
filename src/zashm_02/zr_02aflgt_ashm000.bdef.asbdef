@@ -1,0 +1,65 @@
+managed implementation in class ZBP_R_02AFLGT_ASHM000 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_02AFLGT_ASHM000 alias connection02
+persistent table Z02AFLGT_ASHM
+draft table Z02AFLGT_AS000_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   CarrierId,
+   ConnectionId,
+   FlightDate;
+
+  field ( readonly )
+   Uuid,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   Uuid;
+
+  field ( readonly : update )
+   CarrierId,
+   ConnectionId,
+   FlightDate;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for Z02AFLGT_ASHM
+  {
+    Uuid = uuid;
+    CarrierId = carrier_id;
+    ConnectionId = connection_id;
+    FlightDate = flight_date;
+    AirportFromId = airport_from_id;
+    CityFrom = city_from;
+    CountryFrom = country_from;
+    Planetypeid = planetypeid;
+    AirportToId = airport_to_id;
+    CityTo = city_to;
+    CountryTo = country_to;
+    Price = price;
+    CurrencyCode = currency_code;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

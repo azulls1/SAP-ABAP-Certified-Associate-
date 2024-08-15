@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_01ACONN_ASHM'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_01ACONN_ASHM'
+  }
+}
+define service ZUI_01ACONN_ASHM_O4 provider contracts odata_v4_ui {
+  expose ZC_01ACONN_ASHM as Connnection_ashm;
+}

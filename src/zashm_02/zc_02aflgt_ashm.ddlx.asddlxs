@@ -1,0 +1,249 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CarrierId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CarrierId'
+annotate view ZC_02AFLGT_ASHM with
+{
+  @EndUserText.label: 'Uuid'
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Uuid;
+  
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 20 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Airline ID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Airline ID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  CarrierId;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Flight Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Flight Number'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  ConnectionId;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Flight Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Flight Date'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  FlightDate;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Departure Airport'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Departure Airport'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  AirportFromId;
+  
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Departure City'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Departure City'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CityFrom;
+  
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Land/Region'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Land/Region'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CountryFrom;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Plane Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Plane Type'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Planetypeid;
+  
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Destination Airport'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Destination Airport'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  AirportToId;
+  
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'City To'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'City To'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  CityTo;
+  
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Land/Region'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Land/Region'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  CountryTo;
+  
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Flight Price'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Flight Price'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Price;
+  
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Currency Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Currency Code'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  CurrencyCode;
+  
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  LastChangedAt;
+}
