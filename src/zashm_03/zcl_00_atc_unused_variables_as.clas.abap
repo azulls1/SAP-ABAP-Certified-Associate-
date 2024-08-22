@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_00_atc_unused_variables_as IMPLEMENTATION.
+CLASS ZCL_00_ATC_UNUSED_VARIABLES_AS IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zashm_04_04 IMPLEMENTATION.
+CLASS ZASHM_04_04 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

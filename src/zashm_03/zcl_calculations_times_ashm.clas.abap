@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_calculations_times_ashm IMPLEMENTATION.
+CLASS ZCL_CALCULATIONS_TIMES_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

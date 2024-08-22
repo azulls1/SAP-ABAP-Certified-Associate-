@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_truncation_rounding_ashm IMPLEMENTATION.
+CLASS ZCL_TRUNCATION_ROUNDING_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

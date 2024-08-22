@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_forced_conversions_ashm IMPLEMENTATION.
+CLASS ZCL_FORCED_CONVERSIONS_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

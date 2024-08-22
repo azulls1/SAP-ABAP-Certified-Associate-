@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_07_global_ashm IMPLEMENTATION.
+CLASS ZCL_07_GLOBAL_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -93,6 +93,4 @@ CLASS zcl_07_global_ashm IMPLEMENTATION.
     ENDLOOP.
 
   ENDMETHOD.
-
-
 ENDCLASS.

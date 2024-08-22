@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_02_global_ashm IMPLEMENTATION.
+CLASS ZCL_02_GLOBAL_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

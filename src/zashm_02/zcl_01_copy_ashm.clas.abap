@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_01_copy_ashm IMPLEMENTATION.
+CLASS ZCL_01_COPY_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -43,5 +43,4 @@ CLASS zcl_01_copy_ashm IMPLEMENTATION.
 
 
 ENDMETHOD.
-
 ENDCLASS.

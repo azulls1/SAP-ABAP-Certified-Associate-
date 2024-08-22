@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_s4d401_profiling_2_ashm IMPLEMENTATION.
+CLASS ZCL_S4D401_PROFILING_2_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

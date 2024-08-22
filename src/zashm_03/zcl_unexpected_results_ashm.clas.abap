@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_unexpected_results_ashm IMPLEMENTATION.
+CLASS ZCL_UNEXPECTED_RESULTS_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -1,4 +1,4 @@
-CLASS zcl_ashm_01_hello_world DEFINITION
+CLASS zcl_01_text_elements_ashm DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,10 +12,15 @@ ENDCLASS.
 
 
 
-CLASS ZCL_ASHM_01_HELLO_WORLD IMPLEMENTATION.
+CLASS zcl_01_text_elements_ashm IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
-  out->write('Hello World').
+
+* OUT->write( TEXT-001 ).
+
+  OUT->write( 'Hello World!'(001) ).
+  OUT->write( text-hau ).
+
   ENDMETHOD.
 ENDCLASS.

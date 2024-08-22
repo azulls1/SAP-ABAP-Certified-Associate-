@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_truncati_roundi_ashm IMPLEMENTATION.
+CLASS ZCL_TRUNCATI_ROUNDI_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

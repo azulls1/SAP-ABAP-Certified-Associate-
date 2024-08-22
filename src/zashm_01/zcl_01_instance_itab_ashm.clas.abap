@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_01_instance_itab_ashm IMPLEMENTATION.
+CLASS ZCL_01_INSTANCE_ITAB_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

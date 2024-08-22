@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_00_unit_test_3_ashm IMPLEMENTATION.
+CLASS ZCL_00_UNIT_TEST_3_ASHM IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
