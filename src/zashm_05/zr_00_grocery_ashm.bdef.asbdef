@@ -1,0 +1,55 @@
+managed implementation in class ZBP_R_00_GROCERY_ASHM unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_00_GROCERY_ASHM alias Grocery_ashm
+persistent table Z00_GROCERY_ASHM
+draft table Z00_GROCERY_AS_D
+etag master Locallastchanged
+lock master total etag Lastchangedat
+authorization master( global )
+
+{
+  field ( readonly )
+   Id,
+   CreatedBy,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchanged;
+
+  field (numbering : managed)
+   Id;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+action checkExpirationDte result[1] $self;
+
+  mapping for Z00_GROCERY_ASHM
+  {
+    Id = id;
+    Product = product;
+    Category = category;
+    Brand = brand;
+    Price = price;
+    Currency = currency;
+    Quantity = quantity;
+    Purchasedate = purchasedate;
+    Expirationdate = expirationdate;
+    Expired = expired;
+    Rating = rating;
+    Note = note;
+    CreatedBy = created_by;
+    Createdat = createdat;
+    Lastchangedby = lastchangedby;
+    Lastchangedat = lastchangedat;
+    Locallastchanged = locallastchanged;
+  }
+}

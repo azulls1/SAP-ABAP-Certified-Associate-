@@ -16,6 +16,10 @@ CLASS ZCL_ASHM_01_HELLO_WORLD IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
-  out->write('Hello World').
+
+  out->write( 'Hello World' ).
+  out->write( | Hello World! | ).
+
+
   ENDMETHOD.
 ENDCLASS.
